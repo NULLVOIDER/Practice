@@ -1,0 +1,1 @@
+print("my collage is very complicated but it can simplified")
