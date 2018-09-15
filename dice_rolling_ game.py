@@ -1,4 +1,4 @@
-leave=0
+leaveprogram=0
 while leaveprogram != "q":
     improt random
     print("This is a dice rolling program")
