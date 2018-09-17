@@ -5,7 +5,7 @@ while leaveprogram != "q":
     print("press r to roll")
     input()
     number=random.randint(1,6)
-    if number=1:
+    if number==1:
         print("[-------------]")
         print("[             ]")
         print("[      ●      ]")
@@ -14,7 +14,7 @@ while leaveprogram != "q":
         print()
         print("Type 'q' to quit")
         leaveprogram=input()
-    if number=2:
+    if number==2:
         print("[-------------]")
         print("[             ]")
         print("[   ●      ●  ]")
@@ -23,7 +23,7 @@ while leaveprogram != "q":
         print()
         print("Type 'q' to quit")
         leaveprogram=input()
-    if number=3:
+    if number==3:
         print("[-------------]")
         print("[   ●     ●   ]")
         print("[             ]")
@@ -32,7 +32,7 @@ while leaveprogram != "q":
         print()
         print("Type 'q' to quit")
         leaveprogram=input()
-    if number=4:
+    if number==4:
         print("[-------------]")
         print("[   ●     ●   ]")
         print("[             ]")
@@ -41,7 +41,7 @@ while leaveprogram != "q":
         print()
         print("Type 'q' to quit")
         leaveprogram=input()
-    if number=5:
+    if number==5:
         print("[-------------]")
         print("[   ●     ●   ]")
         print("[      ●      ]")
@@ -50,7 +50,7 @@ while leaveprogram != "q":
         print()
         print("Type 'q' to quit")
         leaveprogram=input()
-    if number=6:
+    if number==6:
         print("[-------------]")
         print("[   ●     ●   ]")
         print("[   ●     ●   ]")
