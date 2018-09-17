@@ -1,6 +1,6 @@
 leaveprogram=0
 while leaveprogram != "q":
-    improt random
+    import random
     print("This is a dice rolling program")
     print("press r to roll")
     input()
