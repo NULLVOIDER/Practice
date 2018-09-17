@@ -4,6 +4,6 @@ b=int(input("Enter the value of b: "))
 if(a>b):
 	print("a is greater than b")
 if(a>b):
-	print("a is equal to b")
+	print("a is greater than b")
 else:
-	print("b is greater than a")
+	print("b is equal to a")
