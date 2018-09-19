@@ -17,7 +17,7 @@ while leaveprogram != "q":
     if number==2:
         print("[-------------]")
         print("[             ]")
-        print("[   ●      ●  ]")
+        print("[   ●     ●   ]")
         print("[             ]")
         print("[-------------]")
         print()
