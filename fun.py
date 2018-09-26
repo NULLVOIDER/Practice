@@ -1,6 +1,6 @@
 a=int(input("Enter the value of A: "))
 b=int(input("Enter the value of B: "))
-p=int(input("what do you want to do? 1,2,3,4,5,6: "))
+p=int(input("what do you want to do? 1,2,3,4,5: "))
 def add():
 	return a+b
 def sub():
@@ -11,8 +11,6 @@ def divide():
 	return a/b
 def remainder():
 	return a%b
-def sqrt():
-	return a*b
 if(p==1):
 	print(" addition= ",add())
 if(p==2):
@@ -23,5 +21,3 @@ if(p==4):
 	print("Division= ",divide())
 if(p==5):
 	print("remainder= ",remainder())
-if(p==6):
-	print("square root= ",sqrt())
