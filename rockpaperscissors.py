@@ -20,7 +20,7 @@ while isWin == False:
         
     if (PlayerInput == 2) and (ComputerInput == 1):
         isWin == True
-        print("You win,  computer played Rock!")
+        print("You win, computer played Rock!")
 
     if (PlayerInput == 3) and (ComputerInput == 1):
         isWin == True
