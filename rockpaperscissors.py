@@ -49,3 +49,14 @@ while isWin == False:
     if (PlayerInput == 3) and (ComputerInput == 3):
         isWin == False
         print("It's a draw; computer played Scissors!")
+    if (PlayerInput == 1) and (ComputerInput == 3):
+        isWin = True
+        print("You win, computer played Scissors!")
+        
+    if (PlayerInput == 2) and (ComputerInput == 3):
+        isWin == True
+        print("You lose, computer played Scissors!")
+
+    if (PlayerInput == 3) and (ComputerInput == 3):
+        isWin == False
+        print("It's a draw; computer played Scissors!")
