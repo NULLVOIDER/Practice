@@ -4,11 +4,10 @@ import sys
 board=[i for i in range(0,9)]
 player, computer = '',''
 
-# Corners, Center and Others, respectively
 moves=((1,7,3,9),(5,),(2,4,6,8))
-# Winner combinations
+
 winners=((0,1,2),(3,4,5),(6,7,8),(0,3,6),(1,4,7),(2,5,8),(0,4,8),(2,4,6))
-# Table
+
 tab=range(1,10)
 
 def print_board():
@@ -19,12 +18,12 @@ def print_board():
             end = ' \n'
             if i != 1: end+='---------\n';
         char=' '
-        if i in ('X','O'): char=i;
+        if i in ('F','5'): char=i;
         x+=1
         print(char,end=end)
         
 def select_char():
-    chars=('X','O')
+    chars=('F','5')
     if random.randint(0,1) == 0:
         return chars[::-1]
     return chars
@@ -60,22 +59,18 @@ def make_move(brd, player, move, undo=False):
         return (True, win)
     return (False, False)
 
-# AI goes here
 def computer_move():
     move=-1
-    # If I can win, others don't matter.
     for i in range(1,10):
         if make_move(board, computer, i, True)[1]:
             move=i
             break
     if move == -1:
-        # If player can win, block him.
         for i in range(1,10):
             if make_move(board, player, i, True)[1]:
                 move=i
                 break
     if move == -1:
-        # Otherwise, try to take one of desired places.
         for tup in moves:
             for mv in tup:
                 if move == -1 and can_move(board, computer, mv):
@@ -84,7 +79,7 @@ def computer_move():
     return make_move(board, computer, move)
 
 def space_exist():
-    return board.count('X') + board.count('O') != 9
+    return board.count('F') + board.count('5') != 9
 
 player, computer = select_char()
 print('Player is [%s] and computer is [%s]' % (player, computer))
@@ -97,7 +92,6 @@ while space_exist():
     if not moved:
         print(' >> Invalid number ! Try again !')
         continue
-    #
     if won:
         result='*** Congratulations ! You won ! ***'
         break
